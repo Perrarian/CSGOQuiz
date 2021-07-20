@@ -1,5 +1,7 @@
-<?php include "database.php"?>
-<?php    session_start(); ?>
+<?php 
+include "../config.php";
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
 
@@ -16,8 +18,8 @@
     <?php
 
         
-        
         $number = (int) $_GET['n'];
+        
 
 
 
@@ -42,13 +44,16 @@
             
             
         }
+        
+
+        
         ?>
 
         
 
         <div class="container-2"> <?php echo $link;?></div>
         <div class="currentQuestion">
-        <form method="post" action="process.php" name="phpForm">
+        <form method="post" action="../php/process.php" name="phpForm">
         <ul>
         <?php  foreach($answers as $answer) {
                 echo '<button type="submit" name="choice" class="input" value="'. $answer["Id"] . '">' .$answer['Text'] . '</button>';

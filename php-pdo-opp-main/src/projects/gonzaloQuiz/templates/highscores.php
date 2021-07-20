@@ -1,5 +1,5 @@
 <?php 
-    include "process.php";
+    include "../php/process.php";
 
     $query = $connection->query("SELECT * FROM Highscores ORDER BY highscore DESC");
     $highscores = $query->fetchAll(PDO::FETCH_ASSOC);
@@ -15,7 +15,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
 

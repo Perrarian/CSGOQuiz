@@ -1,6 +1,7 @@
-<?php include "database.php"; ?>
-<? session_start(); ?>
 <?php 
+    session_start();
+    include "database.php";
+
         if(!isset($_SESSION['score'])){
         $_SESSION['score'] = 0;
     }   
@@ -26,12 +27,16 @@
             $_SESSION['score']++;
         } 
 
+        
+
         if($number == $total){
-            header("Location:final.php");
+            header("Location:../templates/final.php");
             exit;
         }else {
-            header("Location:question.php?n=" . $next);
+            header("Location:../templates/question.php?n=" . $next);
         }
+
+        
 
         
 
@@ -40,6 +45,9 @@
 
     }
 
+    
+
+  
  
     
 
