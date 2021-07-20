@@ -1,0 +1,2 @@
+This page was a real challenge. At first everything worked out smoothly, had almost no issues and the quiz was working perfectly. After changing the file structure 
+is when everything went south. Nothing worked. Thankfully after a few hours and help from some people I managed to get it working, except for the high-score page, which is a bummer because it was the best part of the Quiz. I still have the code there, I will try to work around it later in the week but for now Im somewhat satisfied with the result. 7/10.
